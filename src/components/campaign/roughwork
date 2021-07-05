@@ -1,0 +1,32 @@
+<tr className="campaign">
+      <td className="campaign_date">
+        <h4>{moment(details.createdOn).format("Do MMM YYYY")}</h4>
+        <p>{moment(details.createdOn, "YYYYMMDD").fromNow()}</p>
+      </td>
+      <td className="campaign_name">{details.name}</td>
+      <td className="campaign_view">
+        <GiPriceTag />
+      </td>
+      <td className="campaign_action">
+        {/* <div> */}
+          <p>
+            <span>
+              <FaFileCsv style={{color:"green", fontSize: '1.2rem'}}/>
+            </span>
+            CSV
+          </p>
+          <p>
+            <span>
+              <BsGraphUp style={{color:"Red", fontSize: '1.2rem'}}/>
+            </span>
+            Report
+          </p>
+          <p>
+            <span>
+              <FaCalendarAlt style={{color:"blue", fontSize: '1.2rem'}}/>
+            </span>
+            Schedule Again
+          </p>
+        {/* </div> */}
+      </td>
+    </tr>
